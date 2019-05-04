@@ -39,6 +39,7 @@ def hit?(total)
     total += deal_card
   else
     invalid_command
+    prompt_user
   end
 end
 
@@ -51,5 +52,10 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  prompt_user
+  hit?
+  
+
 end
