@@ -53,9 +53,10 @@ end
 
 def runner
   welcome
-  initial_round
-  prompt_user
-  hit?
+  total = initial_round
+  until total < 21
+    total = hit?
+    display_card_total
 
 
 end
